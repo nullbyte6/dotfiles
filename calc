@@ -1,6 +1,0 @@
-#! /usr/bin/bash
-set -f
-set +H
-expr="$*"
-expr="${expr// /}"
-java -jar ~/dotfiles/JCalculator.jar "$expr"
