@@ -94,6 +94,6 @@ rules = [
   { mime = "{audio,video}/*", fg = "#eed49f" },
   { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#f5bde6" },
   { mime = "application/{pdf,doc,rtf}", fg = "#a6da95" },
-  { name = "*", fg = "#cad3f4" },
-  { name = "*/", fg = "#8aadf4" },
+  { url = "*", fg = "#cad3f4" },
+  { url = "*/", fg = "#8aadf4" },
 ]
