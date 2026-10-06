@@ -12,7 +12,7 @@ do
 done
 
 # write cava config
-config_file="~/dotfiles/cava/.config/cava/config"
+config_file="${XDG_RUNTIME_DIR:-/tmp}/waybar-cava.conf"
 echo "
 [general]
 bars = 18
@@ -22,9 +22,9 @@ method = raw
 raw_target = /dev/stdout
 data_format = ascii
 ascii_max_range = 7
-" > $config_file
+" > "$config_file"
 
 # read stdout from cava
-cava -p $config_file | while read -r line; do
+cava -p "$config_file" | while read -r line; do
     echo $line | sed $dict
 done
