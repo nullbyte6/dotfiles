@@ -1,1 +1,6 @@
 .env
+.bedtime.txt
+.zsh_history
+.zcompdump*
+*.log
+*.bak
