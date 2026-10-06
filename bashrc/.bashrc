@@ -19,7 +19,7 @@ source "$HOME/.bashrc_aliases"
 clear
 #nitch
 pokemon-colorscripts --random --no-title
-source "$HOME/.cargo/env"
+[ -f "$HOME/.cargo/env" ] && source "$HOME/.cargo/env"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
