@@ -13,6 +13,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$(pwd)/assets
 export TAURI_LINUXDEPLOY=$(which linuxdeploy)
 export PATH="$PATH:/usr/games"
 
+source "$HOME/.bashrc_exports"
 source "$HOME/.bashrc_functions"
 source "$HOME/.bashrc_aliases"
 clear
