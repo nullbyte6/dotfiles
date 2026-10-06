@@ -1,6 +1,6 @@
 [flavor]
-use = "tokyo-night"
-dark = "tokyo-night"
+use = "catppuccin-macchiato"
+dark = "catppuccin-macchiato"
 
 [icon]
 globs = []

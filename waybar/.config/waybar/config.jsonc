@@ -50,7 +50,7 @@
 	"format": "  ",
 	"tooltip-format": "v0.49.0",
 	//"on-click": "exec hyprlock",
-	"on-click": "exec ~/dotfiles/rofi/.config/rofi/powermenu/type-2/powermenu.sh",
+	"on-click": "exec ~/.config/rofi/powermenu/type-2/powermenu.sh",
 	"on-click-right": "exec kitty"
 },
 "custom/firefox": {
@@ -126,7 +126,7 @@
 	"format": " 󰍛 {usage}% ",
 	"interval": 1,
 	"format-alt-click": "click",
-	"format-alt": "<span color='#00FF00'>{icon0}{icon1}{icon2}{icon3}</span> <span color='#FFFFFF'>{usage:>2}%</span> <span color='#00FF00'> 󰍛 </span>",
+	"format-alt": "<span color='#a6da95'>{icon0}{icon1}{icon2}{icon3}</span> <span color='#cad3f4'>{usage:>2}%</span> <span color='#a6da95'> 󰍛 </span>",
 	"format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
 	"on-click": "gnome-system-monitor"
 },
@@ -135,13 +135,6 @@
 	"format": "   {used:0.1f}"
 },
    
-
-"custom/weather": {
-	"exec": "~/.config/hypr/scripts/weather.sh",
-	"return-type": "json",
-	"interval": 600,
-	"format": "{text}"
-},
 
 "pulseaudio": {
 	"format": "{volume}%",
@@ -152,7 +145,7 @@
 },
 "pulseaudio#microphone": {
 	"format": "{format_source}",
-	"format-source": "<span color='#f38ba8'> </span><span color='#cdd6f4'>{volume}%</span>",
+	"format-source": "<span color='#ed8796'> </span><span color='#cad3f4'>{volume}%</span>",
 	"format-source-muted": "",
 	"on-click": "wpctl set-mute @DEFAULT_SOURCE@ toggle",
 	"on-scroll-up": "wpctl set-volume @DEFAULT_SOURCE@ 5%+",
@@ -166,7 +159,7 @@
 
 },
 "custom/cava": {
-        "cava_config": "~/dotfiles/cava/.config/cava/config",
+        "cava_config": "~/.config/cava/config",
         "framerate": 30,
         "autosens": 1,
         "sensitivity": 100,

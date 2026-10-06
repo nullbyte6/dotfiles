@@ -1,6 +1,6 @@
-export MAUVE="\e[38;5;135m"
-export GREEN="\e[38;5;48m"
-export BLUE="\e[38;5;27m"
+export MAUVE="\e[38;2;198;160;246m"
+export GREEN="\e[38;2;166;218;149m"
+export BLUE="\e[38;2;138;173;244m"
 
 export PS1="\[$GREEN\]$USER@$HOSTNAME \[$BLUE\]\W \[$GREEN\]\$\[\e[0m\] "
 export JAVA_HOME=/opt/jdk-21
@@ -13,8 +13,8 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$(pwd)/assets
 export TAURI_LINUXDEPLOY=$(which linuxdeploy)
 export PATH="$PATH:/usr/games"
 
-source .bashrc_functions
-source .bashrc_aliases
+source "$HOME/.bashrc_functions"
+source "$HOME/.bashrc_aliases"
 clear
 #nitch
 pokemon-colorscripts --random --no-title

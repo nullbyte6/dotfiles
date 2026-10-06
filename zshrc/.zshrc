@@ -14,8 +14,8 @@ autoload -Uz colors && colors
 
 setopt PROMPT_SUBST
 
-PROMPT='%F{135}%n%f at %F{135}%m%f  %F{33}%B%1~%b%f %F{45}%B$(git branch --show-current 2>/dev/null)%b%f
-%F{135}%#%f '
+PROMPT='%F{#c6a0f6}%n%f at %F{#c6a0f6}%m%f  %F{#8aadf4}%B%1~%b%f %F{#7dc4e4}%B$(git branch --show-current 2>/dev/null)%b%f
+%F{#c6a0f6}%#%f '
 
 export EDITOR='nvim'
 export JAVA_HOME="/usr/lib/jvm/java-24-openjdk/"

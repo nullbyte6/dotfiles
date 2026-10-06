@@ -1,0 +1,12 @@
+/**
+ * Catppuccin Macchiato palette, used by powermenu/type-2/shared/colors.rasi
+ **/
+
+* {
+    background:     rgba(36, 39, 58, 0.8);
+    background-alt: rgba(36, 39, 58, 0.8);
+    foreground:     #CAD3F4FF;
+    selected:       #C6A0F6FF;
+    active:         #A6DA95FF;
+    urgent:         #ED8796FF;
+}

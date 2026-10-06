@@ -1,4 +1,4 @@
-@import "./mocha.css";
+@import "./macchiato.css";
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
@@ -23,7 +23,7 @@ window#waybar.empty {
     background-color: transparent;
 }
 window#waybar.solo {
-    background-color: #FFFFFF;
+    background-color: @text;
 }
 */
 
@@ -32,7 +32,7 @@ window#waybar.termite {
 }
 
 window#waybar.chromium {
-    background-color: #000000;
+    background-color: @crust;
     border: none;
 }
 
@@ -46,7 +46,7 @@ button {
 
 button:hover {
     background: inherit;
-    /*box-shadow: inset 0 -3px #ffffff;*/
+    /*box-shadow: inset 0 -3px @text;*/
 }
 
 /* you can set a style on hover for any module like this */
@@ -67,7 +67,7 @@ button:hover {
 
 #workspaces button.focused {
     background-color: transparent;
-    /* box-shadow: inset 0 -3px #ffffff; */
+    /* box-shadow: inset 0 -3px @text; */
 }
 
 #workspaces button.urgent {
@@ -80,8 +80,8 @@ button:hover {
 }
 
 #mode {
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
+    background-color: @surface1;
+    box-shadow: inset 0 -3px @text;
 }
 
 #clock,
@@ -109,7 +109,7 @@ button:hover {
 #separator,
 #mpd {
     padding: 0 10px;
-    color: #ffffff;
+    color: @text;
 }
 
 #window {
@@ -226,7 +226,7 @@ button:hover {
 @keyframes blink {
     to {
         background-color: @text;
-        color: #000000;
+        color: @crust;
     }
 }
 
@@ -246,22 +246,22 @@ button:hover {
 }
 
 #power-profiles-daemon.performance {
-    background-color: #f53c3c;
-    color: #ffffff;
+    background-color: @red;
+    color: @text;
 }
 
 #power-profiles-daemon.balanced {
-    background-color: #2980b9;
-    color: #ffffff;
+    background-color: @blue;
+    color: @text;
 }
 
 #power-profiles-daemon.power-saver {
-    background-color: #2ecc71;
-    color: #000000;
+    background-color: @green;
+    color: @crust;
 }
 
 label:focus {
-    background-color: #000000;
+    background-color: @crust;
 }
 
 #cpu {
@@ -295,7 +295,7 @@ label:focus {
 }
 
 #backlight {
-    background-color: #90b1b1;
+    background-color: @teal;
 }
 
 #network {
@@ -335,11 +335,11 @@ label:focus {
 
 #wireplumber {
     background-color: #fff0f5;
-    color: #000000;
+    color: @crust;
 }
 
 #wireplumber.muted {
-    background-color: #f53c3c;
+    background-color: @red;
 }
 
 #custom-media {
@@ -418,11 +418,11 @@ label:focus {
 }
 
 #mpd.disconnected {
-    background-color: #f53c3c;
+    background-color: @red;
 }
 
 #mpd.stopped {
-    background-color: #90b1b1;
+    background-color: @teal;
 }
 
 #mpd.paused {
