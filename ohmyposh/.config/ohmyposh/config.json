@@ -4,7 +4,7 @@
     "black": "#24273a",
     "blue": "#8aadf4",
     "green": "#a6da95",
-    "orange": "#f5a97f",
+    "mauve": "#c6a0f6",
     "red": "#ed8796",
     "white": "#cad3f5",
     "yellow": "#eed49f"
@@ -47,7 +47,7 @@
           "template": " \uea83 {{ path .Path .Location }} ",
           "foreground": "p:black",
           "powerline_symbol": "\ue0b0",
-          "background": "p:orange",
+          "background": "p:mauve",
           "type": "path",
           "style": "powerline"
         },
@@ -157,7 +157,7 @@
       "trailing_diamond": "\ue0b4",
       "template": " \ue7ad {{ .Profile }}{{ if .Region }}@{{ .Region }}{{ end }} ",
       "foreground": "p:white",
-      "background": "p:orange",
+      "background": "p:mauve",
       "type": "aws",
       "style": "diamond",
       "tips": [
