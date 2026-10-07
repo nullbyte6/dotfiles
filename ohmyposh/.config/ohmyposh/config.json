@@ -30,6 +30,7 @@
     {
       "type": "prompt",
       "alignment": "left",
+      "newline": true,
       "segments": [
         {
           "leading_diamond": "\ue0b6",
