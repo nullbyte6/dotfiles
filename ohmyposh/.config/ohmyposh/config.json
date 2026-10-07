@@ -45,7 +45,7 @@
             "style": "folder"
           },
           "template": " \uea83 {{ path .Path .Location }} ",
-          "foreground": "p:white",
+          "foreground": "p:black",
           "powerline_symbol": "\ue0b0",
           "background": "p:orange",
           "type": "path",
@@ -69,13 +69,13 @@
           ],
           "foreground_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}p:black{{ end }}",
-            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}p:white{{ end }}",
-            "{{ if gt .Ahead 0 }}p:white{{ end }}"
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}p:black{{ end }}",
+            "{{ if gt .Ahead 0 }}p:black{{ end }}"
           ]
         },
         {
           "template": " \uf0e7 ",
-          "foreground": "p:white",
+          "foreground": "p:black",
           "powerline_symbol": "\ue0b0",
           "background": "p:yellow",
           "type": "root",
@@ -88,7 +88,7 @@
           "leading_diamond": "<transparent,background>\ue0b0</>",
           "trailing_diamond": "\ue0b4",
           "template": " {{ if gt .Code 0 }}\uf00d{{ else }}\uf00c{{ end }} ",
-          "foreground": "p:white",
+          "foreground": "p:black",
           "background": "p:blue",
           "type": "status",
           "style": "diamond",
