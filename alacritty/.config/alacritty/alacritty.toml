@@ -96,19 +96,19 @@ TERM = "alacritty"
 size = 14.0
 
 [font.normal]
-family = "JetBrains Mono NL"
+family = "JetBrainsMonoNL Nerd Font"
 style = "Regular"
 
 [font.bold]
-family = "JetBrains Mono NL"
+family = "JetBrainsMonoNL Nerd Font"
 style = "Bold"
 
 [font.italic]
-family = "JetBrains Mono NL"
+family = "JetBrainsMonoNL Nerd Font"
 style = "Italic"
 
 [font.bold_italic]
-family = "JetBrains Mono NL"
+family = "JetBrainsMonoNL Nerd Font"
 style = "Bold Italic"
 
 [keyboard]
