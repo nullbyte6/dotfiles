@@ -14,6 +14,7 @@ export STEAM_COMPAT_DATA_PATH="/media/diego/odyssey/SteamLibrary/steamapps/compa
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$(pwd)/assets
 export TAURI_LINUXDEPLOY=$(which linuxdeploy)
 export PATH="$PATH:/usr/games"
+export STARSHIP_CONFIG=~/.config/starship/starship.toml 
 
 source "$HOME/.bashrc_exports"
 source "$HOME/.bashrc_functions"
