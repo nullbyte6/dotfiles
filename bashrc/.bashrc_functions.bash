@@ -1,5 +1,5 @@
 #
-# ~/.bashrc_functions.bash
+# ~/.bashrc_functions
 #
 #
 
@@ -10,6 +10,10 @@ function y() {
 		builtin cd -- "$cwd"
 	fi
 	rm -f -- "$tmp"
+}
+
+function morgan_repo() {
+  cd /media/run/diego/Nova/morgan/
 }
 
 function hfind() {
