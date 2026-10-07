@@ -16,6 +16,10 @@ function morgsrc() {
   cd /run/media/diego/Nova/morgan/
 }
 
+function nova() {
+  cd /run/media/diego/Nova/
+}
+
 function hfind() {
 	history | grep -v "hfind" | grep "$1" | awk '!seen[substr($0, index($0,$2))]++'
 }

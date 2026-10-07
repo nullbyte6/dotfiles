@@ -16,9 +16,9 @@ export TAURI_LINUXDEPLOY=$(which linuxdeploy)
 export PATH="$PATH:/usr/games"
 #export STARSHIP_CONFIG=~/.config/starship/starship.toml 
 
-source "$HOME/.bashrc_exports.bash"
-source "$HOME/.bashrc_functions.bash"
-source "$HOME/.bashrc_aliases.bash"
+source "$HOME/.bashrc_exports"
+source "$HOME/.bashrc_functions"
+source "$HOME/.bashrc_aliases"
 clear
 #nitch
 pokemon-colorscripts --random --no-title
