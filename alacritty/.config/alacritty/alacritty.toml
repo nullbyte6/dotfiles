@@ -96,19 +96,19 @@ TERM = "alacritty"
 size = 14.0
 
 [font.normal]
-family = "JetBrainsMonoNL Nerd Font"
+family = "JetBrains Mono NL"
 style = "Regular"
 
 [font.bold]
-family = "JetBrainsMonoNL Nerd Font"
+family = "JetBrains Mono NL"
 style = "Bold"
 
 [font.italic]
-family = "JetBrainsMonoNL Nerd Font"
+family = "JetBrains Mono NL"
 style = "Italic"
 
 [font.bold_italic]
-family = "JetBrainsMonoNL Nerd Font"
+family = "JetBrains Mono NL"
 style = "Bold Italic"
 
 [keyboard]
@@ -231,7 +231,6 @@ save_to_clipboard = true
 semantic_escape_chars = ",│`|:\"' ()[]{}<>"
 
 [window]
-opacity = 0.85
 padding = { x = 16, y = 16 }
 decorations = "Full"
 
