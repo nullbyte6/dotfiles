@@ -12,8 +12,8 @@ function y() {
 	rm -f -- "$tmp"
 }
 
-function morgan_repo() {
-  cd /media/run/diego/Nova/morgan/
+function morgsrc() {
+  cd /run/media/diego/Nova/morgan/
 }
 
 function hfind() {
