@@ -1,3 +1,8 @@
 [flavor]
 use = "catppuccin-macchiato"
 dark = "catppuccin-macchiato"
+
+[icon]
+prepend_dirs = [
+	{ name = "Documents", text = "\uf07c", fg = "#00bcd4" },
+]
