@@ -8,3 +8,6 @@ zsprompt '\e[1;32m\u@\h\e[0m \e[1;34m\W\e[0m$(test -n "\g" && printf " \e[1;35m(
 
 # Functions copied from ~/.bashrc_functions
 source "$HOME/dotfiles/zsrc/.zsrc_functions"
+clear
+#nitch
+pokemon-colorscripts --random --no-title
