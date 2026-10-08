@@ -6,7 +6,7 @@
 # directory and a green tick or red cross for the last command's status.
 # The branch is only shown inside a git repository.
 zsprompt '\e[1;32m\u@\h\e[0m \e[1;34m\W\e[0m$(test -n "\g" && printf " \e[1;35m(%s)\e[0m" "\g") $(test \? -eq 0 && printf "\e[1;32m✓ \e[0m" || printf "\e[1;31m✗ \e[0m")\e[1;33m>>\e[0m '
-
+HISTAPPEND=never
 # Functions copied from ~/.bashrc_functions
 source "$HOME/dotfiles/zsrc/.zsrc_functions"
 clear
