@@ -1,0 +1,107 @@
+#
+# ~/dotfiles/zsrc/.zsrc_functions
+#
+# Functions copied from ~/.bashrc_functions and adapted for zs.
+# Loaded from ~/dotfiles/zsrc/.zsrc.
+#
+# Differences from the bash version:
+#   [[ ... ]]            -> [ ... ] (zs has no [[ ]])
+#   builtin cd / command -> cd / plain command (zs has no builtin/command)
+#   ( cmd & disown )     -> setsid -f cmd (zs has no background jobs)
+#   history              -> ~/.bash_history (zs has no history builtin yet)
+#
+
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		cd "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
+function morgsrc() {
+  cd /run/media/diego/Nova/morgan/
+}
+
+function nova() {
+  cd /run/media/diego/Nova/
+}
+
+function hfind() {
+	grep -v "hfind" ~/.bash_history | grep "$1" | awk '!seen[$0]++'
+}
+
+function lsb() {
+	lsblk -Ax name -o NAME,MAJ:MIN,ROTA,SIZE,TYPE,FSTYPE,MOUNTPOINTS
+}
+
+function mkcd() {
+	mkdir $1
+	cd $1
+}
+
+function cdls() {
+	cd $1
+	ls -lAhtr
+}
+
+function p() {
+	cd $HOME/dotfiles/scripts/lang/python/ || return 1
+	if [ ! -f "$1" ]; then
+		echo "#!/usr/bin/python" > $1
+		if [ "$2" = 0 ]; then
+			:
+		else
+			nvim $1
+		fi
+		echo "  Python script was created."
+	else
+		if [ "$2" = '-e' ] || [ "$2" = '--edit' ]; then
+			nvim $1
+		else
+			python "$1"
+		fi
+	fi
+	cd $HOME
+}
+
+function bashf() {
+	cd $HOME/dotfiles/
+	nvim bashrc/.bashrc_functions
+	cd $HOME
+}
+
+function bstamp() {
+	echo "[$(date +"%Y-%m-%d")] $(date +"%H:%M")" >> $HOME/dotfiles/bashrc/.bedtime.txt
+	echo "Bedtime recorded: $(date +"%H:%M")"
+}
+
+function dot() {
+	nvim $HOME/dotfiles/$1
+}
+
+function fox() {
+    if [ -n "$1" ] && [ ! -f "$1" ]; then
+	url=$1
+	http='https://'
+        setsid -f firefox "$http$1" >/dev/null 2>&1
+    else
+        setsid -f firefox >/dev/null 2>&1
+    fi
+}
+
+function tm() {
+	echo "Current Time => $(date +"%H:%M")"
+}
+
+function new-alias() {
+	cd $HOME/dotfiles/bashrc/
+	echo "alias $1='$2'" >> .bashrc_aliases
+	sort -o .bashrc_aliases .bashrc_aliases
+	cd $HOME
+}
+
+function q() {
+	exit
+}
