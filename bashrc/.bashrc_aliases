@@ -1,7 +1,1 @@
-#
-#
-#
-#
-alias morgcompile=''
 alias morgcompile='morgsrc && ./scripts/build-linux.sh && ./build/installer/MorganSetup.run'
-# .bashrc_aliases
