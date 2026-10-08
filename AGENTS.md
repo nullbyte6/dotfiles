@@ -1,7 +1,7 @@
-# AGENTS.md — Arlo Development Instructions
+# AGENTS.md — Agents' Development Instructions
 
 ## Project rules
-These instructions apply to the entire Arlo repository and all tasks performed by Codex.
+These instructions apply to the entire repository and all tasks performed by agents.
 
 ### 1. Do not create test files or directories
 - NEVER create Python test files, including `test_*.py`, `*_test.py`, or temporary test scripts.
