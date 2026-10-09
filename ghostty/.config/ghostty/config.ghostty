@@ -25,3 +25,5 @@ window-padding-balance = true
 
 # Window - GTK
 gtk-titlebar-style = tabs
+
+font-size = 14
