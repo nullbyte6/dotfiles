@@ -19,8 +19,8 @@ keybind = ctrl+shift+alt+right=goto_split:right
 # Window
 window-vsync = true
 window-theme = ghostty
-window-padding-x = 10
-window-padding-y = 10
+window-padding-x = 12
+window-padding-y = 12
 window-padding-balance = true
 
 # Window - GTK
