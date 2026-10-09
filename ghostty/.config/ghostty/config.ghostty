@@ -27,3 +27,5 @@ window-padding-balance = true
 gtk-titlebar-style = tabs
 
 font-size = 14
+faint-opacity = 1
+minimum-contrast = 2
