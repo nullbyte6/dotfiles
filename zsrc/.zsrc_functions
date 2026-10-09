@@ -21,11 +21,11 @@ function y() {
 }
 
 function morgsrc() {
-  cd /run/media/diego/Nova/morgan/
+  cd /mnt/nova/morgan/
 }
 
 function nova() {
-  cd /run/media/diego/Nova/
+  cd /mnt/nova/
 }
 
 function hfind() {
