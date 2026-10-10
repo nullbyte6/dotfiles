@@ -10,13 +10,14 @@ hl.monitor({
 
 hl.config({
     general = {
-        gaps_in  = 2,
-        gaps_out = 12,
+        gaps_in  = 4,
+        gaps_out = 6,
 
-        border_size = 2,
+        border_size = 0,
 
         col = {
-            active_border   = accent,
+            active_border = colors.glass,
+            -- active_border   = accent,
             inactive_border = colors.glass,
         },
 
