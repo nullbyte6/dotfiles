@@ -12,8 +12,6 @@ hl.bind(mainMod .. " + SPACE",      hl.dsp.exec_cmd(programs.menu))
 hl.bind(mainMod .. " + CTRL + SPACE", hl.dsp.exec_cmd(programs.powermenu))
 hl.bind(mainMod .. " + P",          hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J",          hl.dsp.layout("togglesplit"))
-hl.bind(mainMod .. " + N",          hl.dsp.exec_cmd(programs.swaync))
-hl.bind(mainMod .. " + SHIFT + N",  hl.dsp.exec_cmd(programs.swaync_reset))
 
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
@@ -60,7 +58,7 @@ hl.bind(mainMod .. " + SHIFT + left",  hl.dsp.exec_cmd("playerctl previous"),   
 
 hl.bind(mainMod .. " + B",         hl.dsp.exec_cmd("firefox"))
 hl.bind(mainMod .. " + ALT + G",   hl.dsp.exec_cmd("google-chrome-stable"))
-hl.bind(mainMod .. " + O",         hl.dsp.exec_cmd("waybar"))
 hl.bind(mainMod .. " + ALT + V",   hl.dsp.exec_cmd("code"))
-hl.bind(mainMod .. " + CTRL + O",  hl.dsp.exec_cmd("pkill waybar"))
 hl.bind(mainMod .. " + L",         hl.dsp.exec_cmd("hyprlock"))
+hl.bind(mainMod .. " + O",         hl.dsp.exec_cmd("noctalia"))
+hl.bind(mainMod .. " + CTRL + O",  hl.dsp.exec_cmd("pkill noctalia"))
