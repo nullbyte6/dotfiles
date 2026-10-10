@@ -1,6 +1,6 @@
 return {
     terminal     = "kitty",
     fileManager  = "nemo",
-    menu         = "rofi -show drun",
+    menu         = "noctalia msg panel-toggle launcher",
     powermenu    = "~/.config/rofi/powermenu/type-2/powermenu.sh",
 }
