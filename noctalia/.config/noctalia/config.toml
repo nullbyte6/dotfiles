@@ -1,0 +1,3 @@
+[shell.launcher]
+pinned  = ["kitty.desktop", "firefox.desktop", "nemo.desktop", "bitwarden.desktop"]
+compact = true
