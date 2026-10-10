@@ -25,6 +25,7 @@ hl.config({
 
 local blurredLayers = {
     rofi     = "rofi",
+    anyrun   = "anyrun",
     noctalia = "^noctalia-(bar-.*|panel|attached-panel|dock|notification|osd)$",
 }
 
