@@ -23,9 +23,14 @@ hl.config({
     },
 })
 
-for _, ns in ipairs({ "rofi", "waybar" }) do
+local blurredLayers = {
+    rofi     = "rofi",
+    noctalia = "^noctalia-(bar-.*|panel|attached-panel|dock|notification|osd)$",
+}
+
+for name, ns in pairs(blurredLayers) do
     hl.layer_rule({
-        name         = "blur-" .. ns,
+        name         = "blur-" .. name,
         match        = { namespace = ns },
         blur         = true,
         ignore_alpha = 0,
