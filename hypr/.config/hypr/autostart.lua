@@ -1,0 +1,11 @@
+hl.env("HYPRCURSOR_THEME", "Adwaita")
+hl.env("HYPRCURSOR_SIZE", "24")
+
+hl.on("hyprland.start", function()
+    hl.exec_cmd("waybar")
+    hl.exec_cmd("hyprlock")
+    hl.exec_cmd("hyprpaper")
+    hl.exec_cmd("nwg-look -a")
+    hl.exec_cmd("swaync")
+    hl.exec_cmd("sudo keyd")
+end)

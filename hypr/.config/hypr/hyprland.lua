@@ -1,0 +1,6 @@
+require("core")
+require("autostart")
+require("decoration")
+require("animations")
+require("input")
+require("keybinds")
