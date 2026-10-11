@@ -5,14 +5,15 @@ mapfile -t repos < <(find "$HOME" -maxdepth 3 \( -name '.*' ! -name '.git' ! -pa
 dirty=()
 for repo in "${repos[@]}"; do
     count=$(git -C "$repo" status --porcelain 2>/dev/null | wc -l)
-    if [ "$count" -gt 0 ]; then
+    ahead=$(git -C "$repo" rev-list --count '@{u}..HEAD' 2>/dev/null || echo 0)
+    if [ "$count" -gt 0 ] || [ "$ahead" -gt 0 ]; then
         dirty+=("$repo")
-        printf '%2d) %s: %d\n' "${#dirty[@]}" "${repo/#$HOME/~}" "$count"
+        printf '%2d) %s: %d changes, %d unpushed\n' "${#dirty[@]}" "${repo/#$HOME/~}" "$count" "$ahead"
     fi
 done
 
 if [ "${#dirty[@]}" -eq 0 ]; then
-    echo "All ${#repos[@]} repos are clean"
+    echo "All ${#repos[@]} repos are clean and pushed"
     exit 0
 fi
 
