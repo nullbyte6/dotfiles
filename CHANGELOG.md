@@ -4,6 +4,7 @@
 
 - Add omnis.sh to list per-repo change counts for git repos in ~ and push them
 - Update omnis.sh to also list repos with unpushed commits
+- Update omnis.sh into a TUI that scans the whole machine, shows added/changed/deleted files per repo, and pushes marked or all repos with confirmation
 - Add powerlevel10k prompt config (.p10k.zsh) to the zshrc package
 - Fix powerlevel10k theme source path to be absolute via $HOME
 - Add Ctrl+L keybind to lock the screen with noctalia
