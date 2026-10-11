@@ -111,10 +111,10 @@ probe_access() {
 }
 
 probe_all() {
-    local tmp i total=${#repos[@]} running=0
+    local tmp i k=0 total=$# running=0
     tmp=$(mktemp -d)
-    for ((i = 0; i < total; i++)); do
-        printf '\rChecking push access %d/%d' "$((i + 1))" "$total"
+    for i in "$@"; do
+        printf '\rChecking push access %d/%d' "$((++k))" "$total"
         (probe_access "$i" >"$tmp/$i") &
         ((running++))
         if ((running >= JOBS)); then
@@ -123,10 +123,21 @@ probe_all() {
         fi
     done
     wait
-    for ((i = 0; i < total; i++)); do
+    for i in "$@"; do
         access[i]=$(<"$tmp/$i")
     done
     rm -rf "$tmp"
+}
+
+probe_missing() {
+    local i todo=()
+    for i in "${!repos[@]}"; do
+        [ -n "${access[$i]}" ] && continue
+        if [ "$show_clean" = 1 ] || pending "$i"; then
+            todo+=("$i")
+        fi
+    done
+    ((${#todo[@]} > 0)) && probe_all "${todo[@]}"
 }
 
 fetch_repos() {
@@ -166,7 +177,7 @@ scan() {
         check_repo "$i"
     done
     printf '\n'
-    probe_all
+    probe_missing
     cursor=0
     top=0
 }
@@ -533,6 +544,8 @@ fetch_all() {
     remote_repos
     printf '\e[H\e[2J'
     fetch_repos "${SEL[@]}"
+    printf '\n'
+    probe_missing
     status_msg="Fetched ${#SEL[@]} repos"
 }
 
@@ -612,6 +625,8 @@ main() {
             F) fetch_all ;;
             f)
                 show_clean=$((1 - show_clean))
+                printf '\e[H\e[2J'
+                probe_missing
                 cursor=0
                 top=0
                 ;;
