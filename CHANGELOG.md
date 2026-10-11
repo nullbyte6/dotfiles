@@ -4,6 +4,7 @@
 
 - Add Ctrl+L keybind to lock the screen with noctalia
 - Fix lock keybind to use SUPER+L with noctalia instead of Ctrl+L and hyprlock
+- Fix anyrun showing unicode symbols as results by disabling the symbols plugin
 
 ## 2026-10-10
 
