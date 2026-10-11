@@ -2,6 +2,7 @@
 
 ## 2026-10-11
 
+- Add omnis.sh to list per-repo change counts for git repos in ~ and push them
 - Add powerlevel10k prompt config (.p10k.zsh) to the zshrc package
 - Fix powerlevel10k theme source path to be absolute via $HOME
 - Add Ctrl+L keybind to lock the screen with noctalia
