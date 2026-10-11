@@ -94,27 +94,17 @@ export MANPATH="/usr/local/man:$MANPATH"
 export LANG=en_US.UTF-8
 
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='nvim'
-else
   export EDITOR='vim'
+else
+  export EDITOR='nvim'
 fi
 
 # Compilation flags
 export ARCHFLAGS="-arch $(uname -m)"
 
-# Set personal aliases, overriding those provided by Oh My Zsh libs,
-# plugins, and themes. Aliases can be placed here, though Oh My Zsh
-# users are encouraged to define aliases within a top-level file in
-# the $ZSH_CUSTOM folder, with .zsh extension. Examples:
-# - $ZSH_CUSTOM/aliases.zsh
-# - $ZSH_CUSTOM/macos.zsh
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export JAVA_HOME="/opt/jdk-25"
 export PATH=$JAVA_HOME:$PATH
+
+source ./.zsh_functions.zsh
+source ./.zsh_alias.zsh
