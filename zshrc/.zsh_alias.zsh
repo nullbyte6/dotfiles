@@ -4,7 +4,6 @@ export ALXD=~/alxandria/
 export PYTH=~/dotfiles/scripts/lang/python
 
 # Aliases
-alias alx="cd ~/alxandria/"
 alias aur="yay -Qq | grep"
 alias btop="bashtop"
 alias cl="clear"
@@ -17,6 +16,7 @@ alias egrep="egrep --color=auto"
 alias ff="fastfetch"
 alias fishconf="nvim ~/dotfiles/fish/.config/fish/config.fish"
 alias grep="grep --color=auto"
+alias here="ls -lahfs | grep '$1'"
 alias hyprconf="cd ~/.config/hypr/"
 alias i3conf="sudo nvim ~/dotfiles/i3/.config/i3/config"
 alias kittyconf="nvim ~/dotfiles/kitty/.config/kitty/kitty.conf"
@@ -31,6 +31,7 @@ alias pokemon="pokemon-colorscripts -n"
 alias pyth="cd ~/dotfiles/scripts/lang/python"
 alias sp="sudo pacman"
 alias super="sudo"
+alias this="ls -lahfs"
 alias unstow="stow --delete"
 alias waybar="waybar & disown"
 alias wayboff="pkill waybar"
