@@ -13,7 +13,6 @@ Config(
   plugins: [
     "libapplications.so",
     "libshell.so",
-    "libsymbols.so",
   ],
   keybinds: [
     Keybind(key: "Return", action: Select),
