@@ -59,7 +59,6 @@ hl.bind(mainMod .. " + SHIFT + left",  hl.dsp.exec_cmd("playerctl previous"),   
 hl.bind(mainMod .. " + B",         hl.dsp.exec_cmd("firefox"))
 hl.bind(mainMod .. " + ALT + G",   hl.dsp.exec_cmd("google-chrome-stable"))
 hl.bind(mainMod .. " + ALT + V",   hl.dsp.exec_cmd("code"))
-hl.bind(mainMod .. " + L",         hl.dsp.exec_cmd("hyprlock"))
-hl.bind("CTRL + L",                hl.dsp.exec_cmd("noctalia msg session lock"))
+hl.bind(mainMod .. " + L",         hl.dsp.exec_cmd("noctalia msg session lock"))
 hl.bind(mainMod .. " + O",         hl.dsp.exec_cmd("noctalia"))
 hl.bind(mainMod .. " + CTRL + O",  hl.dsp.exec_cmd("pkill noctalia"))
