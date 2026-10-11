@@ -6,6 +6,7 @@
 - Update omnis.sh to also list repos with unpushed commits
 - Update omnis.sh into a TUI that scans the whole machine, shows added/changed/deleted files per repo, and pushes marked or all repos with confirmation
 - Add pull, fetch and push-access detection (can push / read-only / local) to omnis.sh, with a table layout and OMNIS ASCII logo header
+- Update omnis.sh to show only pending repos by default
 - Add powerlevel10k prompt config (.p10k.zsh) to the zshrc package
 - Fix powerlevel10k theme source path to be absolute via $HOME
 - Add Ctrl+L keybind to lock the screen with noctalia
