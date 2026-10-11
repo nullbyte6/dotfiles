@@ -1,7 +1,7 @@
 # Exports
 export DOTS=~/dotfiles/
-export ALXD=~/alxandria/
 export PYTH=~/dotfiles/scripts/lang/python
+export MORG=/mnt/nova/morgan
 
 # Aliases
 alias aur="yay -Qq | grep"
