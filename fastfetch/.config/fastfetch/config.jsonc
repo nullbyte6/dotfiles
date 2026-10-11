@@ -24,17 +24,17 @@
     },
     {
       "type": "os",
-      "key": " OS",
+      "key": " OS",
       "keyColor": "blue"
     },
     {
       "type": "shell",
-      "key": " Shell",
+      "key": " Shell",
       "keyColor": "blue"
     },
     {
       "type": "wm",
-      "key": " WM",
+      "key": " WM",
       "keyColor": "blue"
     },
     {
