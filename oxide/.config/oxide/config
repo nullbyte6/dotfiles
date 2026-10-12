@@ -1,0 +1,16 @@
+# Oxide (by nb6) config
+# extra account names that count as "owned" (repeatable)
+owner = nullbyte6
+
+# directory levels below each root that are searched
+depth = 6
+
+# accent colors on, or off (off by default when NO_COLOR is set)
+color = on
+
+# key bar at the bottom: on or off (the h key toggles it)
+hints = off
+
+# repositories listed first / hidden: a directory name, or a path
+pin = oxide
+# ignore = ~/dev/vendor
