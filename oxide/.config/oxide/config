@@ -12,5 +12,5 @@ color = on
 hints = off
 
 # repositories listed first / hidden: a directory name, or a path
-pin = oxide
+# pin = oxide
 # ignore = ~/dev/vendor
