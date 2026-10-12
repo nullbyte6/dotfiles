@@ -106,5 +106,5 @@ export ARCHFLAGS="-arch $(uname -m)"
 export JAVA_HOME="/opt/jdk-25"
 export PATH=$JAVA_HOME:$PATH
 
-source ./.zsh_functions.zsh
-source ./.zsh_alias.zsh
+source ~/.zsh_functions.zsh
+source ~/.zsh_alias.zsh
