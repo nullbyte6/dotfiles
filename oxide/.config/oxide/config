@@ -11,6 +11,9 @@ color = on
 # key bar at the bottom: on or off (the h key toggles it)
 hints = off
 
+# log panel: on or off (the l key toggles it)
+logs = on
+
 # repositories listed first / hidden: a directory name, or a path
 # pin = oxide
 # ignore = ~/dev/vendor
