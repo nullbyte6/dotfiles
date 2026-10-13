@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-13
+
+- Fix nvim-treesitter config for the main branch API (replaces removed nvim-treesitter.configs)
+
 ## 2026-10-11
 
 - Add omnis.sh to list per-repo change counts for git repos in ~ and push them
