@@ -2,6 +2,7 @@
 
 -- extra account names that count as "owned" (a string or a list)
 owner = { "nullbyte6" }
+editor = "nvim"
 
 -- directory levels below each root that are searched
 depth = 8
