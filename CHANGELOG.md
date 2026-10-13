@@ -4,6 +4,7 @@
 
 - Update hypr config to omarchy defaults (omarchy keybindings loaded from the omarchy package), replacing the old custom hypr config, and stow it
 - Add smooth slide animation when switching workspaces to hypr looknfeel.lua
+- Fix hypr package by removing the unused wlp_* wallpapers
 - Fix nvim-treesitter config for the main branch API (replaces removed nvim-treesitter.configs)
 
 ## 2026-10-11
