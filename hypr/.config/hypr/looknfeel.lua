@@ -33,6 +33,9 @@
 --   },
 -- })
 
+hl.curve("workspaceSlide", { type = "bezier", points = { { 0.2, 1.0 }, { 0.2, 1.0 } } })
+hl.animation({ leaf = "workspaces", enabled = true, speed = 4, bezier = "workspaceSlide", style = "slide" })
+
 -- https://wiki.hypr.land/Configuring/Basics/Variables/#layout
 -- hl.config({
 --   layout = {
