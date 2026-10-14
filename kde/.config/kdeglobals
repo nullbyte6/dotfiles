@@ -148,7 +148,7 @@ DefaultDarkLookAndFeel=com.endeavouros.breezedarkeos.desktop
 LookAndFeelPackage=Catppuccin-Macchiato-Mauve
 contrast=4
 frameContrast=0.2
-widgetStyle=Union
+widgetStyle=Breeze
 
 [KFileDialog Settings]
 Allow Expansion=false
