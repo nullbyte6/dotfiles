@@ -7,6 +7,14 @@ Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,
 Switch to Next Keyboard Layout=Meta+Alt+K,Meta+Alt+K,
 _k_friendly_name=Keyboard Layout Switcher
 
+[com.anthropic.Claude]
+BC52B6B06F4A4EF7B1C3E14685DBEA5B-Ctrl+Alt+Space=none,Ctrl+Alt+Space,Claude shortcut: Ctrl+Alt+Space
+_k_friendly_name=Claude
+
+[dev.xarbit.appgrid]
+_k_friendly_name=AppGrid Launcher Center
+appgrid_open_compact=none,none,Open in Compact Mode
+
 [kaccess]
 Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off
 _k_friendly_name=Accessibility
@@ -277,6 +285,12 @@ new-private-window=Meta+Alt+B
 
 [services][org.kde.konsole.desktop]
 _launch=none
+
+[services][org.kde.krunner.desktop]
+_launch=Search\tAlt+F2
+
+[services][vicinae.desktop]
+toggle=Meta+Space
 
 [services][yazi.desktop]
 _launch=Meta+E
