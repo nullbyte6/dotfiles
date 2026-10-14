@@ -279,10 +279,6 @@ toggle do not disturb=none,none,Toggle do not disturb
 [services][com.mitchellh.ghostty.desktop]
 _launch=Ctrl+Alt+T\tMeta+T
 
-[services][firefox.desktop]
-_launch=Meta+B
-new-private-window=Meta+Alt+B
-
 [services][org.kde.konsole.desktop]
 _launch=none
 
@@ -294,3 +290,8 @@ toggle=Meta+Space
 
 [services][yazi.desktop]
 _launch=Meta+E
+
+[services][zen.desktop]
+_launch=Meta+B
+new-blank-window=Meta+Ctrl+B
+new-private-window=Meta+Alt+B
