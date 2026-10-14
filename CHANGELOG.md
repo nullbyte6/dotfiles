@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-14
+
+- Remove Omarchy from the hypr config: restore the standalone custom config (keybinds, animations, decoration, macchiato colors) so it no longer needs /usr/share/omarchy
+
 ## 2026-10-13
 
 - Update hypr config to omarchy defaults (omarchy keybindings loaded from the omarchy package), replacing the old custom hypr config, and stow it

@@ -1,2 +1,9 @@
--- Extra autostart processes.
--- o.launch_on_start("my-service")
+hl.env("HYPRCURSOR_THEME", "Adwaita")
+hl.env("HYPRCURSOR_SIZE", "24")
+
+hl.on("hyprland.start", function()
+    hl.exec_cmd("hyprpaper")
+    hl.exec_cmd("nwg-look -a")
+    hl.exec_cmd("sudo keyd")
+    hl.exec_cmd("noctalia")
+end)
