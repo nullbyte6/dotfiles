@@ -3,8 +3,8 @@ _k_friendly_name=Activity Manager
 switch-to-activity-4624e9e3-3593-40d4-8c46-c6760c3ba55b=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
-Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,
-Switch to Next Keyboard Layout=Meta+Alt+K,Meta+Alt+K,
+Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,Switch to Last-Used Keyboard Layout
+Switch to Next Keyboard Layout=Meta+Alt+K,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
 
 [com.anthropic.Claude]
@@ -245,6 +245,10 @@ powerProfile=Battery,Battery\tMeta+B,Switch Power Profile
 
 [plasmashell]
 Slideshow Wallpaper Next Image=none,none,Next Wallpaper Image
+Toggle Bigscreen Home Overlay=Meta+O,Meta+O,Toggle Bigscreen Home Overlay
+Toggle Bigscreen Home Screen=Home Page,Home Page,Toggle Bigscreen Home Screen
+Toggle Bigscreen Settings=Settings,Settings,Toggle Bigscreen Settings
+Toggle Bigscreen Tasks Overview=Menu,Menu,Toggle Bigscreen Tasks Overview
 _k_friendly_name=plasmashell
 activate application launcher=Meta\tAlt+F1,Meta\tAlt+F1,Activate Application Launcher
 activate task manager entry 1=Meta+1,Meta+1,Activate Task Manager Entry 1
@@ -257,6 +261,7 @@ activate task manager entry 6=Meta+6,Meta+6,Activate Task Manager Entry 6
 activate task manager entry 7=Meta+7,Meta+7,Activate Task Manager Entry 7
 activate task manager entry 8=Meta+8,Meta+8,Activate Task Manager Entry 8
 activate task manager entry 9=Meta+9,Meta+9,Activate Task Manager Entry 9
+activate widget 1=Meta+F1,none,Activate Plasma Bigscreen Homescreen Widget
 activate widget 25=none,none,Activate Minimize All Windows Widget
 clear history=none,none,Clear Notification History
 clear-history=none,none,Clear Clipboard History
@@ -279,19 +284,22 @@ toggle do not disturb=none,none,Toggle do not disturb
 [services][com.mitchellh.ghostty.desktop]
 _launch=Ctrl+Alt+T\tMeta+T
 
+[services][firefox.desktop]
+_launch=Meta+B
+new-private-window=Meta+Alt+B
+
 [services][org.kde.konsole.desktop]
 _launch=none
 
 [services][org.kde.krunner.desktop]
 _launch=Search\tAlt+F2
 
+[services][org.kde.spectacle.desktop]
+CurrentMonitorScreenShot=none
+OpenWithoutScreenshot=none
+
 [services][vicinae.desktop]
 toggle=Meta+Space
 
 [services][yazi.desktop]
 _launch=Meta+E
-
-[services][zen.desktop]
-_launch=Meta+B
-new-blank-window=Meta+Ctrl+B
-new-private-window=Meta+Alt+B

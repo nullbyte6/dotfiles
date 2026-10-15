@@ -138,6 +138,7 @@ ColorSchemeHash=ff9a547ccfc1c0f5d473b1a94c5554e7e9d635ef
 LastUsedCustomAccentColor=157,167,255
 TerminalApplication=/usr/bin/ghostty --gtk-single-instance=true
 TerminalService=com.mitchellh.ghostty.desktop
+UseSystemBell=true
 
 [Icons]
 Theme=Mkos-Big-Sur-Night
@@ -165,7 +166,10 @@ Sort directories first=true
 Sort hidden files last=false
 Sort reversed=false
 Speedbar Width=140
-View Style=DetailTree
+View Style=Simple
+
+[KShortcutsDialog Settings]
+Dialog Size=600,480
 
 [WM]
 activeBackground=36,39,58
