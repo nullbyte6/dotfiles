@@ -8,7 +8,7 @@ config.cursor_blink_rate = 600
 config.force_reverse_video_cursor = true
 config.font = wezterm.font_with_fallback({
   "JetBrains Mono NL",
-  { family = "Symbols Nerd Font Mono", scale = 1.2 },
+  { family = "Symbols Nerd Font Mono", scale = 1.3 },
   "Noto Sans Symbols 2",
   "Noto Color Emoji",
 })

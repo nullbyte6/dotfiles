@@ -282,7 +282,7 @@ switch to previous activity=none,none,Switch to Previous Activity
 toggle do not disturb=none,none,Toggle do not disturb
 
 [services][com.mitchellh.ghostty.desktop]
-_launch=Ctrl+Alt+T\tMeta+T
+_launch=none
 
 [services][firefox.desktop]
 _launch=Meta+B
@@ -297,6 +297,9 @@ _launch=Search\tAlt+F2
 [services][org.kde.spectacle.desktop]
 CurrentMonitorScreenShot=none
 OpenWithoutScreenshot=none
+
+[services][org.wezfurlong.wezterm.desktop]
+_launch=Meta+T
 
 [services][vicinae.desktop]
 toggle=Meta+Space
