@@ -3,7 +3,6 @@
 ## 2026-10-16
 
 - Update KDE shortcuts: disable Meta+Arrow quick tiling and make Meta+Up maximize the window
-
 - Update kitty keybinds: ctrl+shift+enter no longer opens a split and now toggles a maximized (stack layout) window; ctrl+shift+l layout cycling disabled
 - Fix wezterm font config: use font_with_fallback with JetBrains Mono NL, Symbols Nerd Font Mono and emoji fallbacks so glyphs are found
 - Update wezterm to scale Nerd Font glyphs by 1.2 to match kitty and ghostty sizing
