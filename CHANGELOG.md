@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-16
+
+- Fix wezterm font config: use font_with_fallback with JetBrains Mono NL, Symbols Nerd Font Mono and emoji fallbacks so glyphs are found
+
 ## 2026-10-14
 
 - Remove Omarchy from the hypr config: restore the standalone custom config (keybinds, animations, decoration, macchiato colors) so it no longer needs /usr/share/omarchy
