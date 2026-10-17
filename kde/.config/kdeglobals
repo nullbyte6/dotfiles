@@ -136,8 +136,8 @@ ForegroundVisited=198, 160, 246
 AccentColor=157,167,255
 ColorSchemeHash=ff9a547ccfc1c0f5d473b1a94c5554e7e9d635ef
 LastUsedCustomAccentColor=157,167,255
-TerminalApplication=/usr/bin/ghostty --gtk-single-instance=true
-TerminalService=com.mitchellh.ghostty.desktop
+TerminalApplication=kitty
+TerminalService=kitty.desktop
 UseSystemBell=true
 
 [Icons]
@@ -154,13 +154,13 @@ widgetStyle=Breeze
 [KFileDialog Settings]
 Allow Expansion=false
 Automatically select filename extension=true
-Breadcrumb Navigation=true
+Breadcrumb Navigation=false
 Decoration position=2
 Show Full Path=false
 Show Inline Previews=true
 Show Preview=false
 Show Speedbar=true
-Show hidden files=false
+Show hidden files=true
 Sort by=Name
 Sort directories first=true
 Sort hidden files last=false
@@ -170,6 +170,9 @@ View Style=DetailTree
 
 [KShortcutsDialog Settings]
 Dialog Size=600,480
+
+[Shortcuts]
+Copy=Ctrl+Ins; Meta+C; Ctrl+C
 
 [WM]
 activeBackground=36,39,58
