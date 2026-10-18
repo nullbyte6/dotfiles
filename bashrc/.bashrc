@@ -31,3 +31,6 @@ export NVM_DIR="$HOME/.nvm"
 #[ -f "$(which starship)" ] && eval "$(starship init bash)"
 [ -f "$(which oh-my-posh)" ] && eval "$(oh-my-posh init bash --config ~/.config/ohmyposh/config.json)"
 . "$HOME/.cargo/env"
+
+# Hermes Agent command
+case ":$PATH:" in *":$HOME/.local/bin:"*) ;; *) export PATH="$HOME/.local/bin:$PATH" ;; esac
