@@ -1,0 +1,71 @@
+/* Catppuccin Macchiato - Wofi */
+* {
+  font-size: 18px;
+}
+#scroll {
+  background-color: #24273a;
+}
+#outer-box {
+  background-color: #24273a;
+  padding: 10px;
+  border: 2px solid #c6a0f6;
+}
+#main {
+  background-color: #24273a;
+}
+scrollbar,
+scrollbar trough,
+undershoot.top,
+undershoot.bottom {
+  min-width: 5px;
+  min-height: 5px;
+  background: none;
+}
+scrollbar slider{
+  background-color: #c6a0f6;
+}
+#outer-box {
+  padding: 10px;
+}
+
+#input image {
+  color: #c6a0f6;
+  -gtk-icon-effect: none;
+}
+#input {
+  background-color: #363a4f;
+  color: #cad3f5;
+  caret-color: #c6a0f6;
+  border: 1px solid #494d64;
+  padding: 8px 12px;
+  margin: 10px;
+  border-radius: 35px;
+  outline: 1px solid #5b6078;
+}
+#input:focus {
+  border-color: #c6a0f6;
+}
+#input placeholder {
+  color: #24273a;
+}
+#entry {
+  background-color: #24273a;
+  color: #cad3f5;
+}
+#entry #entry:selected {
+  background-color: #363a4f;
+  color: #c6a0f6;
+}
+#entry:selected {
+  background-color: #363a4f;
+  color: #c6a0f6;
+}
+#entry:hover {
+  background-color: #494d64;
+}
+#text {
+  color: #cad3f5 ;
+}
+#text:selected {
+  color: #c6a0f6;
+}
