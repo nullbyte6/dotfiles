@@ -1,0 +1,1 @@
+/home/diego/dotfiles_v2/polybar/.config/../dotfiles/polybar/.config/launch_polybar.sh
