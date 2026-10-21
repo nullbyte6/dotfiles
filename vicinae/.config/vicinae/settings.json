@@ -17,6 +17,9 @@
    "tray": {
       "enabled": false
    },
+   "global_shortcuts": {
+      "toggle": "super+SPACE"
+   },
    "font": {
       "rendering": "native",
       "normal": {
