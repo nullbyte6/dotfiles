@@ -2,7 +2,7 @@ local colors = require("macchiato")
 
 hl.config({
     decoration = {
-        rounding         = 12,
+        rounding         = 0,
         rounding_power   = 4,
         active_opacity   = 1.0,
         inactive_opacity = 0.85,
@@ -25,6 +25,7 @@ hl.config({
 
 local blurredLayers = {
     rofi     = "rofi",
+    wofi     = "wofi",
     anyrun   = "anyrun",
     noctalia = "^noctalia-(bar-.*|panel|attached-panel|dock|notification|osd)$",
 }

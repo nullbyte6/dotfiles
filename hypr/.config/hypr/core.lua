@@ -13,11 +13,11 @@ hl.config({
         gaps_in  = 4,
         gaps_out = 6,
 
-        border_size = 0,
+        border_size = 2,
 
         col = {
             active_border = colors.glass,
-            -- active_border   = accent,
+            active_border   = accent,
             inactive_border = colors.glass,
         },
 
